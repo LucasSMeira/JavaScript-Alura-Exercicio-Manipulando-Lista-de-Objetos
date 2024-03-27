@@ -11,7 +11,7 @@ const listaProdutos = [
 function filtrarOrdenarProdutosPorPreco(valorMaximo) {
     const arrayFiltrado = listaProdutos.filter(produto => produto.preco <= valorMaximo);
 
-    const arrayOrdenado = arrayFiltrado.sort((a, b) => b.preco - a.preco);
+    const arrayOrdenado = arrayFiltrado.sort((a, b) => a.preco - b.preco);
     return arrayOrdenado;
 }
 
